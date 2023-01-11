@@ -40,14 +40,14 @@ def adivina_numero(vidas):
             print("Te pasaste, elegi uno mas chico")
             vidas -= 1
             print(f'Te quedan {vidas} vidas')
-            numero_usuario = int(input("Ingresa un numero entre 1 y 100: "))
         else:
             print("Te quedaste corto, elegi uno mas grande")
             vidas -= 1
             print(f'Te quedan {vidas} vidas')
-            numero_usuario = int(input("Ingresa un numero entre 1 y 100: "))
-
-    print(f'Lo siento perdiste :( el numero correcto era {numero_random}')
+        numero_usuario = int(input("Ingresa un numero entre 1 y 100: "))
+    
+    if vidas == 1:
+        print(f'Lo siento perdiste :( el numero correcto era {numero_random}')
 
 
 
